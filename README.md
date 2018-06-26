@@ -1,4 +1,4 @@
-# Nodejs MQTT
+# Nodejs WS-MQTT
 Install Node
 <br>run <b>npm install</b>
 <br> Run <b>node app.js</b> in terminal

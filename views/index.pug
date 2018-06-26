@@ -48,14 +48,8 @@ block content
     br
     hr
     #subscribeDiv
-    h3 Subcribe
+    h3 Subscribe
     form
-        .form-row
-            h5 Your topics :
-            
-        .form-row
-            #userTopics
-            
         .form-row
             .col
                 input.form-control(id="subscribeTopic" , type="text" , placeholder="Topic")
@@ -69,6 +63,15 @@ block content
             .col
                 button.btn.btn-success(id="unsubscribeBtn" type="button")
                     ="Unsubscribe"
+        br
+        .form-row
+            h5 Your topics :
+            
+            
+        .form-row
+            #userTopics
+            
+
 
 
     br
@@ -95,6 +98,7 @@ block content
             br
             .form-row
                 .col
+                    Label Message
                     input.form-control(id="publishMessage", type="text" placeholder="message")    
             br
             .form-row
