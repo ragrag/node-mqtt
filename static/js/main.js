@@ -35,6 +35,7 @@ $("#connectBtn").click( () =>{
                 onFailure:onDisconnect,
                 userName : username,
                 password : password, 
+                useSSL: false   
             });
     }
     else 
