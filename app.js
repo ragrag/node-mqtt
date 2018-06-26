@@ -26,6 +26,6 @@ app.get('/', (req, res) => {
 
 
 //server start
-app.listen(process.env.PORT || strings.port, () => {
+app.listen(process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT  || strings.port, () => {
     console.log("Server Started.");
 });
