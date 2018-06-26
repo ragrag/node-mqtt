@@ -2,8 +2,7 @@
 //Delete Request 
 $(document).ready(() => {
 
-    $.notify("load" ,"success");
-
+  
 let client;
 let connected = false;
 let userTopics = new Set();
