@@ -1,0 +1,18 @@
+.userTopics {
+    color : #3084A0;
+}
+
+.msgTopic {
+    font-size:20px;
+    color : #3084A0;
+}
+
+.msgBody {
+    font-size:17px;
+    color : rgb(130, 220, 253);
+}
+
+#messagesDiv{
+    max-height:400px;
+    overflow :scroll;
+}

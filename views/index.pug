@@ -1,0 +1,105 @@
+extends base
+
+block content
+
+
+    h3 Connection
+    #connectionDiv
+        form
+            .form-row
+                .col-5
+                    label Host Url/IP
+                    input.form-control(id="connectIp", type="text" placeholder="Server IP" , value="broker.mqttdashboard.com")
+                .col
+                    label Port
+                    input.form-control(id="connectPort", type="text",palceholder="Server port", value="8000")
+                .col
+                    label SSL/TLS
+                    |
+                    |
+                    br
+                    input(type="checkbox"  id="connectSSL")
+                  
+                    
+            .form-row
+                .col
+                    label Username
+                    input.form-control(id="connectUsername", type="text" placeholder="Username" )
+                .col
+                    label Password
+                    input.form-control(id="connectPassword", type="password" )
+            br
+            .form-row
+                .col
+                    button.btn.btn-success(id="connectBtn" , type="button")
+                        ="Connect"
+                .col
+                    h5
+                        | Status 
+                        span(id="connectStatus" style="color:red;") disconnected
+                        
+    br
+    hr
+
+    h3 Messages:
+    br
+    #messagesDiv
+
+    br
+    hr
+    #subscribeDiv
+    h3 Subcribe
+    form
+        .form-row
+            h5 Your topics :
+            
+        .form-row
+            #userTopics
+            
+        .form-row
+            .col
+                input.form-control(id="subscribeTopic" , type="text" , placeholder="Topic")
+            .col
+                button.btn.btn-success(id="subscribeBtn" type="button")
+                    ="Subscribe"
+        br
+        .form-row
+            .col
+                input.form-control(id="unsubscribeTopic" , type="text" , placeholder="Topic")
+            .col
+                button.btn.btn-success(id="unsubscribeBtn" type="button")
+                    ="Unsubscribe"
+
+
+    br
+    hr
+
+    #publishDiv
+        h3 Publish
+        form
+            .form-row
+                .col-7
+                    label Topic
+                    br
+                    input.form-control(id="publishTopic", type="text" placeholder="message topic")
+                .col
+                    label QOS
+                    br
+                    select(id="publishQos" placeholder="QOS")
+                        option(value="0")
+                            ="0"
+                        option(value="2")
+                            ="1"
+                        option(value="2")
+                            ="2"
+            br
+            .form-row
+                .col
+                    input.form-control(id="publishMessage", type="text" placeholder="message")    
+            br
+            .form-row
+                br
+                button.btn.btn-success(id="publishBtn" type="button")
+                    ="Publish"
+    br
+    hr  

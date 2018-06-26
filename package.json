@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Nodejs Express Template",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Raggi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {}
+}
